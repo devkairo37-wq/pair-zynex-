@@ -1,0 +1,35 @@
+{
+  "name": "𝙺𝙰𝙸𝚁𝙾 𝚉𝚈𝙽𝙴𝚇",
+  "description": "𝙺𝙰𝙸𝚁𝙾 𝚉𝚈𝙽𝙴𝚇 - Free base WhatsApp bot — pairing-code + MongoDB session",
+  "logo": "https://files.catbox.moe/ejufwa.jpg",
+  "keywords": ["𝙺𝙰𝙸𝚁𝙾 𝚉𝚈𝙽𝙴𝚇", "whatsapp-bot", "baileys", "free-bot"],
+  "success_url": "/",
+  "stack": "container",
+  "env": {
+    "MONGODB_URI": {
+      "description": "Your MongoDB Atlas connection string (sessions store here).",
+      "required": true,
+      "value": ""
+    },
+    "OWNER_NUMBER": {
+      "description": "Owner WhatsApp number with country code.",
+      "required": false,
+      "value": "923266105873"
+    },
+    "PREFIX": {
+      "description": "Command prefix.",
+      "required": false,
+      "value": "."
+    },
+    "WORK_TYPE": {
+      "description": "Bot work mode: public | private | group | inbox.",
+      "required": false,
+      "value": "public"
+    },
+    "GROUP_INVITE_CODE": {
+      "description": "WhatsApp group invite code the bot auto-joins on connect (without https://chat.whatsapp.com/).",
+      "required": false,
+      "value": ""
+    }
+  }
+}
